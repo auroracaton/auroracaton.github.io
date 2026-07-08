@@ -39,7 +39,7 @@ a.button {
     background-color: #2563EB;
     color: white;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 999px;
     font-size: 18px;
     font-weight: 600;
     transition: background-color 0.2s ease;
