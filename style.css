@@ -1,5 +1,7 @@
 body {
-    background-color: #FAFAFA;
+    background:
+        radial-gradient(circle at top right, rgba(37, 99, 235, 0.08), transparent 35%),
+        #FAFAFA;
     color: #1F2937;
     font-family: "IBM Plex Sans", sans-serif;
     margin: 0;
