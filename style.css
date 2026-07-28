@@ -7,11 +7,19 @@ html {
 }
 
 body {
+    margin: 0;
     background-color: #FAFAFA;
     color: #0B1F44;
     font-family: "IBM Plex Sans", sans-serif;
-    margin: 0;
 }
+
+img {
+    max-width: 100%;
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
 
 .navbar {
     position: sticky;
@@ -71,6 +79,7 @@ body {
 
     position: relative;
     overflow: hidden;
+
     border-bottom: 1px solid rgba(11, 31, 68, 0.08);
 }
 
@@ -82,10 +91,12 @@ body {
 
 .hero h1 {
     margin: 0 0 34px;
+
+    color: #071A3D;
+
     font-size: clamp(42px, 5vw, 68px);
     line-height: 1.15;
     letter-spacing: -0.045em;
-    color: #071A3D;
 }
 
 .hero h1 span {
@@ -97,18 +108,22 @@ body {
 }
 
 .lead {
+    margin: 0 0 34px;
+
+    color: #0B1F44;
+
     font-size: 24px;
     font-weight: 700;
     line-height: 1.45;
-    margin: 0 0 34px;
-    color: #0B1F44;
 }
 
 .intro-text p {
+    margin: 0 0 30px;
+
+    color: #32425A;
+
     font-size: 19px;
     line-height: 1.85;
-    margin: 0 0 30px;
-    color: #32425A;
 }
 
 .intro-text strong {
@@ -118,14 +133,19 @@ body {
 
 a.button {
     display: inline-block;
+
     margin-top: 14px;
     padding: 16px 34px;
+
     background: #071A3D;
     color: white;
+
     text-decoration: none;
     border-radius: 6px;
+
     font-size: 17px;
     font-weight: 600;
+
     transition:
         transform 0.2s ease,
         background-color 0.2s ease;
@@ -145,13 +165,18 @@ a.button:hover {
 .data-grid {
     position: absolute;
     inset: 0;
+
     background-image:
         radial-gradient(
             rgba(37, 99, 235, 0.22) 1px,
             transparent 1px
         );
+
     background-size: 18px 18px;
-    mask-image: linear-gradient(to left, black 40%, transparent 95%);
+
+    mask-image:
+        linear-gradient(to left, black 40%, transparent 95%);
+
     -webkit-mask-image:
         linear-gradient(to left, black 40%, transparent 95%);
 }
@@ -163,8 +188,10 @@ a.button:hover {
 
 .line {
     position: absolute;
+
     width: 78%;
     height: 2px;
+
     background: rgba(37, 99, 235, 0.25);
     transform-origin: left center;
 }
@@ -185,16 +212,20 @@ a.button:hover {
     position: absolute;
     right: 0;
     bottom: 0;
+
     height: 220px;
+
     display: flex;
     align-items: flex-end;
     gap: 12px;
+
     opacity: 0.35;
 }
 
 .bar-chart span {
     width: 22px;
     display: block;
+
     background: #2563EB;
     border-radius: 4px 4px 0 0;
 }
@@ -212,19 +243,24 @@ a.button:hover {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 30px;
+
     margin-bottom: 34px;
 }
 
 .section-heading h2 {
     margin: 0;
+
+    color: #071A3D;
+
     font-size: 30px;
     letter-spacing: -0.03em;
-    color: #071A3D;
 }
 
 .section-heading::after {
     content: "";
+
     height: 1px;
+
     background: rgba(11, 31, 68, 0.16);
 }
 
@@ -243,10 +279,14 @@ a.button:hover {
 .card {
     min-height: 320px;
     padding: 32px;
+
     background: white;
+
     border: 1px solid rgba(11, 31, 68, 0.08);
     border-radius: 14px;
+
     box-shadow: 0 18px 40px rgba(11, 31, 68, 0.08);
+
     transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
@@ -259,39 +299,50 @@ a.button:hover {
 
 .number {
     display: block;
+
+    margin-bottom: 18px;
+
     color: #2563EB;
+
     font-size: 16px;
     font-weight: 700;
-    margin-bottom: 18px;
 }
 
 .card h3 {
     margin: 0 0 18px;
+
+    color: #071A3D;
+
     font-size: 25px;
     line-height: 1.1;
     letter-spacing: -0.03em;
-    color: #071A3D;
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+
     margin-bottom: 26px;
 }
 
 .tags span {
     padding: 6px 10px;
+
     background: #F1F5F9;
     color: #24324B;
+
     border-radius: 999px;
+
     font-size: 13px;
 }
 
 .card p {
-    color: #24324B;
-    line-height: 1.7;
     margin-bottom: 28px;
+
+    color: #24324B;
+
+    line-height: 1.7;
 }
 
 .card a {
@@ -310,19 +361,24 @@ a.button:hover {
 
 .project-hero {
     padding: 90px 64px 80px;
+
     background:
         linear-gradient(
             135deg,
             rgba(37, 99, 235, 0.08),
             rgba(250, 250, 250, 0.95) 55%
         );
+
     border-bottom: 1px solid rgba(11, 31, 68, 0.08);
 }
 
 .back-link {
     display: inline-block;
+
     margin-bottom: 42px;
+
     color: #2563EB;
+
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -334,7 +390,9 @@ a.button:hover {
 
 .project-label {
     margin: 0 0 18px;
+
     color: #2563EB;
+
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -343,7 +401,9 @@ a.button:hover {
 .project-hero h1 {
     max-width: 900px;
     margin: 0 0 24px;
+
     color: #071A3D;
+
     font-size: clamp(48px, 7vw, 88px);
     line-height: 1;
     letter-spacing: -0.055em;
@@ -352,7 +412,9 @@ a.button:hover {
 .project-subtitle {
     max-width: 790px;
     margin: 0;
+
     color: #32425A;
+
     font-size: 23px;
     line-height: 1.65;
 }
@@ -361,15 +423,19 @@ a.button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+
     margin-top: 34px;
 }
 
 .project-tags span {
     padding: 9px 14px;
+
     background: white;
     color: #24324B;
+
     border: 1px solid rgba(11, 31, 68, 0.09);
     border-radius: 999px;
+
     font-size: 14px;
     font-weight: 500;
 }
@@ -385,6 +451,7 @@ a.button:hover {
     gap: 70px;
 
     padding: 90px 64px;
+
     border-bottom: 1px solid rgba(11, 31, 68, 0.08);
 }
 
@@ -394,15 +461,18 @@ a.button:hover {
 
 .section-label {
     color: #2563EB;
+
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.11em;
     line-height: 1.5;
+    letter-spacing: 0.11em;
 }
 
 .project-section-content h2 {
     margin: 0 0 28px;
+
     color: #071A3D;
+
     font-size: clamp(32px, 4vw, 48px);
     line-height: 1.1;
     letter-spacing: -0.04em;
@@ -411,7 +481,9 @@ a.button:hover {
 .project-section-content > p {
     max-width: 800px;
     margin: 0 0 24px;
+
     color: #32425A;
+
     font-size: 18px;
     line-height: 1.85;
 }
@@ -441,6 +513,7 @@ a.button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
+
     margin-top: 42px;
 }
 
@@ -448,19 +521,24 @@ a.button:hover {
 .finding-card {
     min-height: 245px;
     padding: 28px;
+
     border-radius: 14px;
 }
 
 .contribution-card {
     background: rgba(255, 255, 255, 0.07);
+
     border: 1px solid rgba(255, 255, 255, 0.13);
 }
 
 .contribution-card > span,
 .finding-card > span {
     display: block;
+
     margin-bottom: 28px;
+
     color: #5D8EFF;
+
     font-size: 15px;
     font-weight: 700;
 }
@@ -468,6 +546,7 @@ a.button:hover {
 .contribution-card h3,
 .finding-card h3 {
     margin: 0 0 16px;
+
     font-size: 22px;
     line-height: 1.25;
     letter-spacing: -0.025em;
@@ -479,7 +558,9 @@ a.button:hover {
 
 .contribution-card p {
     margin: 0;
+
     color: #D8E2F3;
+
     font-size: 16px;
     line-height: 1.7;
 }
@@ -493,41 +574,54 @@ a.button:hover {
     grid-template-columns: 1fr auto 1fr auto 1fr;
     align-items: stretch;
     gap: 18px;
+
     margin-top: 42px;
 }
 
 .workflow-step {
     padding: 30px;
+
     background: white;
+
     border: 1px solid rgba(11, 31, 68, 0.09);
     border-radius: 14px;
+
     box-shadow: 0 16px 40px rgba(11, 31, 68, 0.06);
 }
 
 .workflow-step > span {
-    display: flex;
     width: 36px;
     height: 36px;
-    margin-bottom: 26px;
+
+    display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-bottom: 26px;
+
     background: #2563EB;
     color: white;
+
     border-radius: 50%;
+
     font-size: 15px;
     font-weight: 700;
 }
 
 .workflow-step h3 {
     margin: 0 0 14px;
+
     color: #071A3D;
+
     font-size: 22px;
     letter-spacing: -0.025em;
 }
 
 .workflow-step p {
     margin: 0;
+
     color: #32425A;
+
     line-height: 1.7;
 }
 
@@ -535,13 +629,15 @@ a.button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+
     color: #2563EB;
+
     font-size: 32px;
     font-weight: 600;
 }
 
 /* =========================================
-   CHATBOT SCREENSHOT
+   CHATBOT SECTION
 ========================================= */
 
 .chatbot-section {
@@ -553,21 +649,31 @@ a.button:hover {
 }
 
 .chatbot-screenshot {
-    display: block;
     width: 100%;
     height: auto;
+
+    display: block;
+
     border: 1px solid rgba(11, 31, 68, 0.1);
     border-radius: 18px;
+
     box-shadow: 0 24px 60px rgba(11, 31, 68, 0.16);
 }
 
 .chatbot-showcase figcaption {
     max-width: 760px;
+
     margin-top: 18px;
+
     color: #5B677A;
+
     font-size: 15px;
     line-height: 1.7;
 }
+
+/* =========================================
+   DEMO QR CODE
+========================================= */
 
 .demo-access {
     margin-top: 42px;
@@ -579,6 +685,7 @@ a.button:hover {
     gap: 36px;
 
     background: white;
+
     border: 1px solid rgba(11, 31, 68, 0.09);
     border-radius: 16px;
 }
@@ -589,7 +696,9 @@ a.button:hover {
 
 .demo-label {
     margin: 0 0 10px;
+
     color: #2563EB;
+
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -597,27 +706,101 @@ a.button:hover {
 
 .demo-access h3 {
     margin: 0 0 12px;
+
     color: #071A3D;
+
     font-size: 28px;
     letter-spacing: -0.03em;
 }
 
 .demo-access-text > p:last-child {
     margin: 0;
+
     color: #32425A;
+
     font-size: 17px;
     line-height: 1.7;
 }
 
 .chatbot-qr {
-    display: block;
     width: 160px;
     height: 160px;
+
+    display: block;
     object-fit: contain;
+
     padding: 8px;
+
     background: white;
+
     border: 1px solid rgba(11, 31, 68, 0.1);
     border-radius: 10px;
+}
+
+/* =========================================
+   FUTURE DEVELOPMENT
+========================================= */
+
+.future-development {
+    margin-top: 28px;
+    padding: 28px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: flex-start;
+    gap: 22px;
+
+    background: #F8FAFC;
+
+    border: 1px solid rgba(11, 31, 68, 0.08);
+    border-left: 4px solid #2563EB;
+    border-radius: 12px;
+}
+
+.future-development-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #E8F0FF;
+    color: #2563EB;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.future-development-label {
+    margin: 0 0 10px;
+
+    color: #2563EB;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.future-development h3 {
+    margin: 0 0 12px;
+
+    color: #071A3D;
+
+    font-size: 23px;
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+}
+
+.future-development-content > p:last-child {
+    margin: 0;
+
+    color: #5B677A;
+
+    font-size: 15px;
+    line-height: 1.75;
 }
 
 /* =========================================
@@ -626,7 +809,9 @@ a.button:hover {
 
 .finding-card {
     background: white;
+
     border: 1px solid rgba(11, 31, 68, 0.09);
+
     box-shadow: 0 16px 40px rgba(11, 31, 68, 0.06);
 }
 
@@ -636,7 +821,9 @@ a.button:hover {
 
 .finding-card p {
     margin: 0;
+
     color: #32425A;
+
     font-size: 16px;
     line-height: 1.7;
 }
@@ -656,13 +843,17 @@ a.button:hover {
 
 .project-footer {
     padding: 42px 64px;
+
     background: #071A3D;
+
     text-align: center;
 }
 
 .project-footer a {
     color: white;
+
     text-decoration: none;
+
     font-size: 17px;
     font-weight: 600;
 }
@@ -676,6 +867,7 @@ a.button:hover {
 ========================================= */
 
 @media (max-width: 1000px) {
+
     .project-section {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -694,6 +886,7 @@ a.button:hover {
         min-height: 30px;
         transform: rotate(90deg);
     }
+
 }
 
 /* =========================================
@@ -701,22 +894,26 @@ a.button:hover {
 ========================================= */
 
 @media (max-width: 900px) {
+
     .navbar {
         padding: 22px 28px;
+
         align-items: flex-start;
-        gap: 18px;
         flex-direction: column;
+        gap: 18px;
     }
 
     .nav-links {
-        gap: 20px;
         flex-wrap: wrap;
+        gap: 20px;
     }
 
     .hero {
-        grid-template-columns: 1fr;
-        padding: 56px 28px 70px;
         min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        padding: 56px 28px 70px;
     }
 
     .hero-visual {
@@ -738,9 +935,11 @@ a.button:hover {
     .cards {
         grid-template-columns: 1fr;
     }
+
 }
 
 @media (max-width: 700px) {
+
     .project-hero {
         padding: 58px 28px 60px;
     }
@@ -777,21 +976,18 @@ a.button:hover {
         height: 135px;
     }
 
+    .future-development {
+        grid-template-columns: 1fr;
+        padding: 24px;
+    }
+
+    .future-development-icon {
+        width: 40px;
+        height: 40px;
+    }
+
     .project-footer {
         padding: 36px 28px;
     }
-}
 
-.prototype-note {
-    margin-top: 18px !important;
-    padding-top: 18px;
-    border-top: 1px solid rgba(11, 31, 68, 0.1);
-    color: #5B677A !important;
-    font-size: 14px !important;
-    line-height: 1.65 !important;
-}
-
-.prototype-note strong {
-    color: #0B1F44;
-    font-weight: 700;
 }
