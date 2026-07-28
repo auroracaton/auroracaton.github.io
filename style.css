@@ -91,12 +91,10 @@ img {
 
 .hero h1 {
     margin: 0 0 34px;
-
-    color: #071A3D;
-
-    font-size: clamp(42px, 5vw, 68px);
+    font-size: clamp(36px, 4.5vw, 56px);
     line-height: 1.15;
     letter-spacing: -0.045em;
+    color: #071A3D;
 }
 
 .hero h1 span {
