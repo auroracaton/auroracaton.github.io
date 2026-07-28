@@ -951,6 +951,219 @@ a.button:hover {
 }
 
 /* =========================================
+   DIA MACHINE LEARNING RESEARCH PAGE
+========================================= */
+
+.dia-project-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.molecule-pattern {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.28;
+    pointer-events: none;
+
+    background-image:
+        radial-gradient(
+            circle at 78% 24%,
+            rgba(37, 99, 235, 0.22) 0 7px,
+            transparent 8px
+        ),
+        radial-gradient(
+            circle at 88% 45%,
+            rgba(37, 99, 235, 0.18) 0 5px,
+            transparent 6px
+        ),
+        radial-gradient(
+            circle at 73% 68%,
+            rgba(37, 99, 235, 0.17) 0 8px,
+            transparent 9px
+        ),
+        radial-gradient(
+            circle at 94% 76%,
+            rgba(37, 99, 235, 0.14) 0 6px,
+            transparent 7px
+        ),
+        linear-gradient(
+            28deg,
+            transparent 70%,
+            rgba(37, 99, 235, 0.08) 70% 70.4%,
+            transparent 70.4%
+        ),
+        linear-gradient(
+            -38deg,
+            transparent 78%,
+            rgba(37, 99, 235, 0.08) 78% 78.4%,
+            transparent 78.4%
+        );
+}
+
+.research-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 42px;
+}
+
+.research-stat-card {
+    padding: 26px 20px;
+    background: white;
+    border: 1px solid rgba(11, 31, 68, 0.09);
+    border-radius: 14px;
+    box-shadow: 0 14px 35px rgba(11, 31, 68, 0.06);
+}
+
+.research-stat-number {
+    display: block;
+    margin-bottom: 8px;
+    color: #2563EB;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.research-stat-card p {
+    margin: 0;
+    color: #32425A;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.results-section {
+    background: #F8FAFC !important;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 42px;
+}
+
+.result-card {
+    padding: 30px;
+    background: white;
+    border: 1px solid rgba(11, 31, 68, 0.09);
+    border-radius: 14px;
+    box-shadow: 0 16px 40px rgba(11, 31, 68, 0.06);
+}
+
+.result-label {
+    margin: 0 0 14px;
+    color: #2563EB;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+}
+
+.result-card h3 {
+    margin: 0 0 15px;
+    color: #071A3D;
+    font-size: 30px;
+    letter-spacing: -0.04em;
+}
+
+.result-card > p:last-child {
+    margin: 0;
+    color: #32425A;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.research-takeaway {
+    margin-top: 30px;
+    padding: 34px;
+    background: #071A3D;
+    border-radius: 16px;
+}
+
+.research-takeaway-label {
+    margin: 0 0 12px;
+    color: #93B4FF;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+}
+
+.research-takeaway h3 {
+    margin: 0 0 16px;
+    color: white;
+    font-size: 27px;
+    letter-spacing: -0.03em;
+}
+
+.research-takeaway > p:last-child {
+    margin: 0;
+    color: #D8E2F3;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.poster-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 36px;
+    margin-bottom: 38px;
+}
+
+.poster-heading h2 {
+    margin-bottom: 16px;
+}
+
+.poster-heading p {
+    max-width: 650px;
+    margin: 0;
+    color: #32425A;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.poster-download-button {
+    flex-shrink: 0;
+    display: inline-block;
+    padding: 15px 26px;
+    background: #071A3D;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.poster-download-button:hover {
+    transform: translateY(-2px);
+    background: #2563EB;
+}
+
+.poster-viewer {
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+    background: white;
+    border: 1px solid rgba(11, 31, 68, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(11, 31, 68, 0.1);
+}
+
+.poster-viewer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* =========================================
    TABLET
 ========================================= */
 
@@ -1045,6 +1258,23 @@ a.button:hover {
     .contact-item a {
         font-size: 18px;
     }
+
+    .research-stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.results-grid {
+    grid-template-columns: 1fr;
+}
+
+.poster-heading {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.poster-viewer {
+    height: 550px;
+}
 }
 
 
@@ -1099,4 +1329,16 @@ a.button:hover {
     .project-footer {
         padding: 36px 28px;
     }
+    
+    .research-stat-grid {
+    grid-template-columns: 1fr;
+}
+
+.research-takeaway {
+    padding: 26px;
+}
+
+.poster-viewer {
+    height: 430px;
+}
 }
