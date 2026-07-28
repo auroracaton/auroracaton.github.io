@@ -905,6 +905,52 @@ a.button:hover {
 }
 
 /* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+    padding: 80px 64px 100px;
+}
+
+.contact-card {
+    background: white;
+    border: 1px solid rgba(11, 31, 68, 0.08);
+    border-radius: 16px;
+    padding: 42px;
+    box-shadow: 0 18px 40px rgba(11, 31, 68, 0.08);
+}
+
+.contact-item {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(11, 31, 68, 0.08);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item span {
+    display: block;
+    margin-bottom: 8px;
+    color: #2563EB;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-item a {
+    color: #071A3D;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.contact-item a:hover {
+    color: #2563EB;
+}
+
+/* =========================================
    TABLET
 ========================================= */
 
@@ -928,20 +974,8 @@ a.button:hover {
         min-height: 30px;
         transform: rotate(90deg);
     }
-    .resume-section{
-    padding:60px 28px 80px;
 }
 
-.resume-header{
-    flex-direction:column;
-    align-items:flex-start;
-}
-
-.resume-viewer{
-    height:700px;
-}
-
-}
 
 /* =========================================
    MOBILE
@@ -951,7 +985,6 @@ a.button:hover {
 
     .navbar {
         padding: 22px 28px;
-
         align-items: flex-start;
         flex-direction: column;
         gap: 18px;
@@ -964,9 +997,7 @@ a.button:hover {
 
     .hero {
         min-height: auto;
-
         grid-template-columns: 1fr;
-
         padding: 56px 28px 70px;
     }
 
@@ -990,7 +1021,32 @@ a.button:hover {
         grid-template-columns: 1fr;
     }
 
+    .resume-section {
+        padding: 60px 28px 80px;
+    }
+
+    .resume-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .resume-viewer {
+        height: 700px;
+    }
+
+    .contact-section {
+        padding: 60px 28px 80px;
+    }
+
+    .contact-card {
+        padding: 30px;
+    }
+
+    .contact-item a {
+        font-size: 18px;
+    }
 }
+
 
 @media (max-width: 700px) {
 
@@ -1043,5 +1099,4 @@ a.button:hover {
     .project-footer {
         padding: 36px 28px;
     }
-
 }
